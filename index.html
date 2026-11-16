@@ -40,6 +40,7 @@ body {
   padding-right: max(16px, env(safe-area-inset-right, 0px));
   padding-block: 28px 48px;
   display: grid; gap: 20px;
+  grid-template-columns: minmax(0, 1fr);   /* wide content (table) must not widen the page on phones */
 }
 header { display: grid; gap: 6px; }
 .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
